@@ -99,6 +99,8 @@ dlv connect <IP>:<port>
 
 ## Debug 模式启动集群
 
+https://blog.csdn.net/a1369760658/article/details/135147441
+
 ```bash
 hack/local-up-cluster.sh
 
@@ -138,13 +140,11 @@ launch.json
     // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
         {
             "name": "Connect to server",
             "type": "go",
             "request": "attach",
             "mode": "remote",
-            // "remotePath": "${workspaceFolder}",
             "port": 12345,
             "host": "192.168.3.87"
         }
